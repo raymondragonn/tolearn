@@ -1,25 +1,20 @@
 #include <stdio.h>
 
-//Recursividad es la capacidad de llamarse a si misma dentro de la misma función.
-
-long factorial(int n);
-
 int main(int argc, char const *argv[])
 {
-	int num=0;	
-	puts("\nIntroduce un numero:");
-	scanf("%i",&num);
-	printf("El factorial del numero es: %i",factorial(num));
-	return 0;
+    int resultado=1, num;
+    puts("Introduce el numero a calcular el factorial\n");
+    scanf("%i",&num);
+    for(int i=num; i >= 1; i--)
+    {
+        resultado*=i;
+    }
+    printf("El resultado es: %d\n",resultado);
+    return 0;
 }
 
-long factorial(int n){
-	if(n<=1)
-	{
-		return 1;
-	}
-	else
-	{
-		return (n*factorial(n-1));
-	}
-}
+//* x *= y es exactamente lo mismo que poner x = x*y
+//* suponiendo que x = 2 y = 3, entonces x*=y 
+//* por lo tanto 6 sería el nuevo valor de x
+//* si seguimos repitiendo el proceso el nuevo valor
+//* de x será 18, 54, 162, etc.

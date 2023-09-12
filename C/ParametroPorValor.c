@@ -26,5 +26,6 @@ int main() {
 int agregar(int a)
 {
     a += 10; //! a = a+10;
+    printf("\nValor antes de la finalizacion de la funcion: %d", a);
     return a;
 }

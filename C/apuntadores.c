@@ -17,7 +17,8 @@ int main() {
     printf("\n\nPosicion de memoria\n");
     printf("Posicion: %p",&numero);
     printf("\nPosicion: %p",pNumero);
-
+ 
+    //! PROHIBIDO
     printf("\n\n%i",pNumero);
     printf("\n%p",*pNumero);
 

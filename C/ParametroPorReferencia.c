@@ -9,8 +9,9 @@
 
 #include <stdio.h>
 
-void Agregar(int *a){
+int Agregar(int *a){
         *a += 10; //? a = a+10;
+        return 0;
 }
 
 int main() {
